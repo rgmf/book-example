@@ -7,7 +7,7 @@ User=roman
 WorkingDirectory=/home/roman/sites/DOMAIN
 EnvironmentFile=/home/roman/sites/DOMAIN/.env
 
-ExecStart=/home/roman/sites/DOMAIN/virtualenv/bin/gunicorn \
+ExecStart=/home/roman/.local/share/virtualenvs/DOMAIN*/bin/gunicorn \
     --bind unix:/tmp/DOMAIN.socket \
     superlists.wsgi:application
 
